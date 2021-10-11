@@ -5,7 +5,7 @@ client = boto3.client('iam')
 
 #Get list of policies, scope is set to Local(customer managed)
 policies = client.list_policies(
-    Scope='Local | AWS',
+    Scope='Local',
     OnlyAttached= False,
 
 )
